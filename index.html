@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Generator de app icon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
+
+</head>
+<body>
+
+<nav>
+  <div class="nav-wrapper green">
+    <a href="#!" class="brand-logo"><i class="material-icons">apps</i>Image Generator</a>
+
+  </div>
+</nav>
+
+<div class="pt-5" style="padding-top: 10px;"></div>
+
+<div class="row">
+  <div class="col s12">
+    <ul class="tabs">
+      <li class="tab">
+        <a class="active" href="#test0">Imagen</a>
+      </li>
+      <li class="tab">
+        <a class="active" href="#test1" onclick="ResizeImage(512,512,'output1')">512</a>
+      </li>
+      <li class="tab">
+        <a href="#test2" onclick="ResizeImage(192,192,'output2')">192</a>
+      </li>
+      <li class="tab">
+        <a href="#test3" onclick="ResizeImage(144,144,'output3')">144</a>
+      </li>
+      <li class="tab">
+        <a href="#test4" onclick="ResizeImage(96,96,'output4')">96</a>
+      </li>
+      <li class="tab">
+        <a href="#test5" onclick="ResizeImage(72,72,'output5')">72</a>
+      </li>
+      <li class="tab">
+        <a href="#test6" onclick="ResizeImage(48,48,'output6')">48</a>
+      </li>
+      <li class="tab">
+        <a href="#test7" onclick="ResizeImage(36,36,'output7')">36</a>
+      </li>
+
+    </ul>
+  </div>
+
+  <div id="test0" class="col s12">
+    <input id="imageFile" name="imageFile" type="file" class="imageFile btn waves-effect waves-light" accept="image/*" />
+    <img src="" id="preview">
+
+  </div>
+
+  <div id="test1" class="col s12">
+    <a id="download_output1" download="" href="" onclick="download_img('output1','512');">
+      <img src="" id="output1">
+    </a>
+  </div>
+  <div id="test2" class="col s12">
+    <a id="download_output2" download="" href="" onclick="download_img('output2','192');">
+      <img src="" id="output2">
+    </a>
+  </div>
+  <div id="test3" class="col s12">
+    <a id="download_output3" download="" href="" onclick="download_img('output3','144');">
+      <img src="" id="output3">
+    </a>
+  </div>
+  <div id="test4" class="col s12">
+    <a id="download_output4" download="" href="" onclick="download_img('output4','96');">
+      <img src="" id="output4">
+    </a>
+  </div>
+  <div id="test5" class="col s12">
+    <a id="download_output5" download="" href="" onclick="download_img('output5','72');">
+      <img src="" id="output5">
+    </a>
+  </div>
+  <div id="test6" class="col s12">
+    <a id="download_output6" download="" href="" onclick="download_img('output6','48');">
+      <img src="" id="output6">
+    </a>
+  </div>
+  <div id="test7" class="col s12">
+    <a id="download_output7" download="" href="" onclick="download_img('output7','36');">
+      <img src="" id="output7">
+    </a>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
